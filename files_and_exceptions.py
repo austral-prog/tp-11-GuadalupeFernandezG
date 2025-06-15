@@ -1,6 +1,6 @@
 def read_file_to_dict (nombre_archivo): 
 	ventas={}
-	with open("archivo.txt", "r") as archivo:
+	with open('test_datos.txt', "r") as archivo:
 		contenido= archivo.read()
 		producto= ""
 		valor= ""
