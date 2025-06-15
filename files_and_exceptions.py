@@ -13,7 +13,7 @@ def read_file_to_dict (nombre_archivo):
 				if producto in ventas: 
 					ventas[producto].append(monto)
 				else:
-					ventas[producto]= monto
+					ventas[producto]= [monto]
 				#reiniciamos para procesar la siguiente venta
 				producto= ""
 				valor= ""
@@ -31,4 +31,4 @@ def process_dict (diccionario):
 		for monto in ventas: 
 			total+= monto
 		promedio= float(total / len(ventas))
-		print(f"{producto}: ventas totales ${total}, promedio 4{promedio}")
+		print(f"{producto}: ventas totales ${total.2f}, promedio ${promedio.2f}")
